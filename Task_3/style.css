@@ -1,0 +1,9 @@
+.first_box p {
+  font-size: 30px;
+  color: red;
+}
+
+.list li {
+  font-size: 30px;
+  color: blue;
+}
