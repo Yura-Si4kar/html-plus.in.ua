@@ -1,0 +1,22 @@
+.body {
+  max-width: 1140px;
+  min-width: 991px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.condition {
+  font-size: 20px;
+  color: blue;
+  margin-bottom: 50px;
+}
+
+.input_text {
+  color:green;
+  font-size: 20px;
+}
+
+.input_list li{
+  color:red;
+  font-size: 20px;
+}
