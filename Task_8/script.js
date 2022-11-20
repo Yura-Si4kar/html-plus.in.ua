@@ -1,15 +1,37 @@
-alert('Загадайте число!');
-alert('Помножте його на 2!');
-alert('До результату додайте 7!');
+let floor = +prompt('РќР° СЏРєРёР№ РїРѕРІРµСЂС… РїРѕС‚СЂС–Р±РЅРѕ РґРѕСЃС‚Р°РІРёС‚Рё?');
 
-calculate();
+const lowFloorPrice = 20;
+const middleFloorPrice = 30;
+const highFloorPrice = 40;
 
-function calculate() {
-    let number;
-    let result;
-  
-    number = +prompt('Введіть результат!');
-    result = (number-7)/2 <= 0 ? alert('Число має бути більше 0') : (number-7)/2;
-  
-    return alert(`Число, яке ви загадали ${result}`);
+getPrice(floor);
+
+function getPrice(x) {
+  if(x <= 1) {
+    alert('Р”РѕСЃС‚Р°РІРєР° Р±РµР·РєРѕС€С‚РѕРІРЅР°!')
+  } else if (x > 1 && x <= 4) {
+    getLowFloorPrice(x);
+  } else if (x >= 5 && x <= 7) {
+    getMiddleFloorPrice(x);
+  } else if (x >= 8) {
+    getHighFloorPrice(x);
+  }
+}
+
+function getLowFloorPrice(l) {
+  let result = (l - 1) * lowFloorPrice;
+    
+  return alert(`РЎСѓРјР° РґРѕСЃС‚Р°РІРєРё РЅР° РІР°С€ РїРѕРІРµСЂС…: ${result} РіСЂРЅ.`);
+}
+
+function getMiddleFloorPrice(m) {
+  let result = ((m - 4) * middleFloorPrice) + 3 * lowFloorPrice;
+    
+  return alert(`РЎСѓРјР° РґРѕСЃС‚Р°РІРєРё РЅР° РІР°С€ РїРѕРІРµСЂС…: ${result} РіСЂРЅ.`);
+}
+
+function getHighFloorPrice(h) {
+      let result = ((h-7) * highFloorPrice) + 3 * middleFloorPrice + 3 * lowFloorPrice;
+    
+  return alert(`РЎСѓРјР° РґРѕСЃС‚Р°РІРєРё РЅР° РІР°С€ РїРѕРІРµСЂС…: ${result} РіСЂРЅ.`);
 }
