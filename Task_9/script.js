@@ -1,15 +1,8 @@
-alert('Загадайте число!');
-alert('Помножте його на 2!');
-alert('До результату додайте 7!');
+let number = +prompt('Р’РІРµРґС–С‚СЊ С‡РёСЃР»Рѕ РІС–Рґ 1 РґРѕ 10');
 
-calculate();
-
-function calculate() {
-    let number;
-    let result;
-  
-    number = +prompt('Введіть результат!');
-    result = (number-7)/2 <= 0 ? alert('Число має бути більше 0') : (number-7)/2;
-  
-    return alert(`Число, яке ви загадали ${result}`);
+function randomInteger(min, max) {
+  let rand = Math.floor(min + Math.random() * (max + 1 - min));
+  return (number === rand) ? alert(`Р’Р°Рј РїРѕС‰Р°СЃС‚РёР»Рѕ! Р’Р°С€Рµ С‡РёСЃР»Рѕ ${rand}`) : alert(`РќРµ РІРіР°РґР°Р»Рё! Р’Р°С€Рµ С‡РёСЃР»Рѕ ${rand}. РџРѕРїСЂРѕР±СѓР№С‚Рµ С‰Рµ СЂР°Р·! :)`);
 }
+
+randomInteger(1, 10);
