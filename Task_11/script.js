@@ -1,6 +1,5 @@
 let input = prompt('Введіть число');
 
-
 init();
 
 function init() {
