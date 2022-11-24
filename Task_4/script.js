@@ -5,7 +5,7 @@ getName();
 
 function getName() {
   for(let i=0; i<4; i++) {
-    userName = prompt('Enter your name!');
+    let userName = prompt('Enter your name!');
     userNameP += `<p>${userName}</p>`;
     userNameList += `<li>${userName}</li>`;
   }
