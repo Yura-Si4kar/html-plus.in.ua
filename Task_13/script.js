@@ -87,6 +87,6 @@ function findBook() {
     if (book.length == 0) {
         document.write('<p>Извините, мы ничего не можем вам предложить</p>');
     } else {
-        document.write(`<p style="font-size: 25px;">Вам стоит прочитать: <strong style="color: #1e8cbe">${book.name}!</strong></p>`);
+        document.write(`<p style="font-size: 40px;">Вам стоит прочитать: <strong style="color: #1e8cbe">${book.name}!</strong></p>`);
     }
 }
