@@ -6,15 +6,22 @@ const enterWord = prompt('Введіть слово, яке потрібно в�
 init();
 
 function init() {
-    while (validationNumber(deleteNumber)) {
-        deleteNumber = prompt('Не вірний номер! Введіть вірний номер!');
-    };
+    getNumber();
+    getText();
     
+    replace();
+}
+
+function getNumber() {
     while (valiadtionText(enterWord)) {
         enterWord = prompt('Вірно заповніть значення');        
     };
-    
-    replace();
+}
+
+function getText() {
+    while (validationNumber(deleteNumber)) {
+        deleteNumber = prompt('Не вірний номер! Введіть вірний номер!');
+    };
 }
 
 function validationNumber(value) {
