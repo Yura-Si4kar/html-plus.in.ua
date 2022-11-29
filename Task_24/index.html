@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
+    <h1>Задача</h1>
+    <p>Сделать светофор, который "зажигает" красный, желтый, зеленый цвет попеременно в html-разметке через 1,5 секунды.
     
+    Для этого нужно в html-разметке и в css создать 4 класса: .circle, .red, .yellow и .green и один элемент #svetofor, в
+    которых можно использовать такие свойства, как border, box-shadow, background-image в виде линейного градиента, чтобы
+    сформировать внешний вид такого светофора:
+    
+    Ниже вы найдете html-разметку и css-правила для такого светофора. Учтите, что в разметке показаны все цвета. В задаче же
+    вам необходимо будет задавать один цвет каждые 1,5 секунды для одного из елементов светофора. Все остальные будут
+    серого цвета.</p>
+    <div id="svetofor">
+        <div class="circle" color="red"></div>
+        <div class="circle" color="yellow"></div>
+        <div class="circle" color="green"></div>
+    </div>
 </body>
 </html>
