@@ -20,9 +20,14 @@ function getImage() {
 }
 
 function onPictureClick(e) {
-    if (e.target.classList.contains('car')) {
+    let click = e.target;
+
+    if (click.classList.contains('car')) {
         showBigPicture(e);
         console.log('клік по фото');
+    } else if (click.classList.contains('car big')){
+        removeBigPicture();
+        console.log('клік по великі картинці');
     } else {
         removeBigPicture();
         console.log('клік по полю');
@@ -36,7 +41,7 @@ function showBigPicture(e) {
     big.src = e.target.src;
     big.className = e.target.className;
     big.classList.add('big');
-    imageBox.appendChild(wrapper);
+    imageBox.append(wrapper);
 }
 
 function removeBigPicture() {

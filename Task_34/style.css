@@ -1,9 +1,18 @@
-/* .image_box {
+.body {
     position: relative;
-} */
+}
 
 .wrapper {
-    position: relative;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
 }
 
 .car {
@@ -11,10 +20,6 @@
 }
 
 .car.big {
-    position: fixed;
-    top: calc(50% - 300px);
-    left: calc(50% - 350px);
     width: 700px;
     height: 600px;
-    transition: .5s;
 }
