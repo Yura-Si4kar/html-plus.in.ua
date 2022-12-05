@@ -1,6 +1,6 @@
 let imageBox = document.querySelector('.image_box');
 let wrapper = document.createElement('div');
-let big = document.createElement('img');
+let big = new Image();
 document.addEventListener('click', onPictureClick);
 
 init();
@@ -11,7 +11,7 @@ function init() {
 
 function getImage() {
     for (let i = 1; i < 9; i++) {
-        let cars = document.createElement('img');
+        let cars = new Image();
         cars.src = './img/car' + [i] + '.jpg';
         cars.width = 250;
         cars.className = `car`;
