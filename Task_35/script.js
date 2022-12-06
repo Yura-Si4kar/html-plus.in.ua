@@ -14,6 +14,7 @@ function getImage() {
         cars.src = `./img/car/car${i}.jpg`;
         cars.width = 250;
         cars.className = `car`;
+        cars.style.cursor = 'pointer';
         cars.dataset.id = `${i}`;
         imageBox.append(cars);
     }
